@@ -35,7 +35,11 @@ UIScrollViewDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
-    let alertController = UIAlertController(title: "Credentials required", message: "Please enter your email address and password", preferredStyle: .alert)
+    // Alert controller when empty email or password
+    let alertController = UIAlertController(title: "Credentials required", message: "Please enter your email address and password.", preferredStyle: .alert)
+    
+    // Alert controller when sign in failed
+    let sifalertController = UIAlertController(title: "Sign In Failed", message: "Incorrect email or password.", preferredStyle: .alert)
     
     // create an OK action on the alertController
     let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
@@ -61,16 +65,38 @@ UIScrollViewDelegate {
         activityIndicator.startAnimating()
         
         if emailField.text!.isEmpty || passwordField.text!.isEmpty {
-            present(alertController, animated: true) {
-                // optional code for what happens after the alert controller has finished presenting
-                self.activityIndicator.stopAnimating()
-            }
-            // add the OK action to the alert controller
-            alertController.addAction(OKAction)
+            delay(2, closure: {
+                self.present(self.alertController, animated: true) {
+                    // optional code for what happens after the alert controller has finished presenting
+                    self.activityIndicator.stopAnimating()
+                }
+                // add the OK action to the alert controller
+                self.alertController.addAction(self.OKAction)
+                
+                })
+            
+        } else if emailField.text == "sophiakc@gmail.com" && passwordField.text == "topsecret" {
+            
+            // Delay for 2 seconds
+            delay(2, closure: {
+                // Code that runs if both email and password match the text we are looking for in each case
+                self.present(self.sifalertController, animated: true) {
+                    
+                    // optional code for what happens after the alert controller has finished presenting
+                    self.activityIndicator.stopAnimating()
+                    self.performSegue(withIdentifier: "signinSegue", sender: nil)
+                }
+            })
+        } else {
+            delay(2, closure: {
+                // Code that runs if either the email or password do NOT match the text we are looking for in each case
+                
+                // add the OK action to the alert controller
+                self.sifalertController.addAction(self.OKAction)
+            })
+            
         }
         
-        
-       
         
 
     }
