@@ -111,8 +111,11 @@
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rb5-Lb-1JM" userLabel="Sign In UIButton">
                                                 <frame key="frameInset" minX="18" minY="23" width="282" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="didPressSignIn:" destination="YDd-yG-PAF" eventType="touchUpInside" id="ruP-NA-sWo"/>
+                                                </connections>
                                             </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" id="nHL-c1-1hb">
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" id="nHL-c1-1hb">
                                                 <frame key="frameInset" minX="236" minY="38" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
@@ -142,7 +145,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </view>
@@ -158,9 +161,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="UTG-WR-i4R"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="nHL-c1-1hb" id="V0G-gg-rVn"/>
                         <outlet property="buttonParentView" destination="6GY-8T-yBg" id="3o4-id-Dvp"/>
+                        <outlet property="emailField" destination="rP6-aU-kY3" id="STp-Et-B63"/>
                         <outlet property="fieldParentView" destination="62p-IO-Xf6" id="N54-Xb-lYR"/>
                         <outlet property="loginScrollView" destination="KXO-Yb-Qtq" id="9VO-vZ-Ry5"/>
+                        <outlet property="passwordField" destination="bB1-ie-vLQ" id="Fx1-XH-WbN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcf-o9-Ngu" userLabel="First Responder" sceneMemberID="firstResponder"/>
