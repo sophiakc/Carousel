@@ -15,7 +15,7 @@ Total time spent: **** cumulated hours
 	* [X] Static photo tiles on the initial screen
 	* [X] User can scroll to reveal sign in buttons
 * [ ] Sign In [Time spent: ]
-	* [ ] Tapping on email/password reveals the keyboard and shifts the scroll view and Sign In button up
+	* [X] Tapping on email/password reveals the keyboard and shifts the scroll view and Sign In button up [Time spent: 2:00 get lost in translations w back animations of the keyboard]
 	* [ ] Upon tapping the Sign In button
 		* [ ] If the username or password fields are empty, user sees an error alert
 		* [ ] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert
