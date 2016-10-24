@@ -100,36 +100,8 @@
                                 <frame key="frameInset" minY="68" width="320" height="1068"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" id="62p-IO-Xf6" userLabel="fieldParentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="create_text" id="bYo-g5-nJb">
-                                                <frame key="frameInset" minY="15" width="320" height="63"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="login_form" id="P7N-Je-KgE">
-                                                <frame key="frameInset" minY="99" width="320" height="113"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="rP6-aU-kY3">
-                                                <frame key="frameInset" minX="19" minY="111" width="111" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="bB1-ie-vLQ">
-                                                <frame key="frameInset" minX="19" minY="155" width="111" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </view>
                                     <view contentMode="scaleToFill" misplaced="YES" id="6GY-8T-yBg" userLabel="buttonParentView">
-                                        <rect key="frame" x="0.0" y="337" width="320" height="129"/>
+                                        <rect key="frame" x="0.0" y="369" width="320" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="DOt-2G-7M2">
@@ -146,19 +118,59 @@
                                             </activityIndicatorView>
                                         </subviews>
                                     </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="create_text" id="bYo-g5-nJb">
+                                        <rect key="frame" x="0.0" y="16" width="320" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="62p-IO-Xf6" userLabel="fieldParentView">
+                                        <rect key="frame" x="0.0" y="104" width="320" height="129"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="login_form" id="P7N-Je-KgE">
+                                                <frame key="frameInset" minY="16" width="320" height="113"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="rP6-aU-kY3">
+                                                <frame key="frameInset" minX="19" minY="28" width="111" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="bB1-ie-vLQ">
+                                                <frame key="frameInset" minX="19" minY="72" width="111" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </view>
                                 </subviews>
+                                <gestureRecognizers/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="I6P-sx-acU" appends="YES" id="5lc-t4-jCh"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="UTG-WR-i4R"/>
                     <connections>
+                        <outlet property="buttonParentView" destination="6GY-8T-yBg" id="3o4-id-Dvp"/>
+                        <outlet property="fieldParentView" destination="62p-IO-Xf6" id="N54-Xb-lYR"/>
                         <outlet property="loginScrollView" destination="KXO-Yb-Qtq" id="9VO-vZ-Ry5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcf-o9-Ngu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="I6P-sx-acU">
+                    <connections>
+                        <action selector="didDismissKeyboard:" destination="YDd-yG-PAF" id="Fqk-cJ-1bA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1162" y="154"/>
+            <point key="canvasLocation" x="1167" y="438"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DPF-XM-hxw">
