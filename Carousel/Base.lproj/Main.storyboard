@@ -92,8 +92,11 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FZ3-s9-mMq" userLabel="Back UIButton">
                                 <frame key="frameInset" minY="20" width="61" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didPressBack:" destination="YDd-yG-PAF" eventType="touchUpInside" id="2j3-3N-0he"/>
+                                </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="KXO-Yb-Qtq">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="KXO-Yb-Qtq" userLabel="Login Scroll View">
                                 <frame key="frameInset" minY="68" width="320" height="1068"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -149,6 +152,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UTG-WR-i4R"/>
+                    <connections>
+                        <outlet property="loginScrollView" destination="KXO-Yb-Qtq" id="9VO-vZ-Ry5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcf-o9-Ngu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
