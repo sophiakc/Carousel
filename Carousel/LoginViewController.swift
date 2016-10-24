@@ -17,28 +17,39 @@ UIScrollViewDelegate {
     }
     
     
-    
     @IBOutlet weak var loginScrollView: UIScrollView!
-    
-    @IBAction func didPressBack(_ sender: AnyObject) {
-        navigationController!.popViewController(animated: true)
-    }
-    
+
     @IBOutlet weak var buttonParentView: UIView!
         // define variables for initial position and offset
         var buttonInitialY: CGFloat!
         var buttonOffset: CGFloat!
     
-    
     @IBOutlet weak var fieldParentView: UIView!
         var fieldInitialY: CGFloat!
         var fieldOffset: CGFloat!
-    
     
     @IBOutlet weak var emailField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    
+    let alertController = UIAlertController(title: "Credentials required", message: "Please enter your email address and password", preferredStyle: .alert)
+    
+    // create an OK action on the alertController
+    let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+        // handle response here.
+    }
+    
+    
+    
+    
+    
+    
+    @IBAction func didPressBack(_ sender: AnyObject) {
+        navigationController!.popViewController(animated: true)
+    }
     
     @IBAction func didDismissKeyboard(_ sender: AnyObject) {
         view.endEditing(true)
@@ -46,43 +57,25 @@ UIScrollViewDelegate {
     
     
     @IBAction func didPressSignIn(_ sender: AnyObject) {
+        
         activityIndicator.startAnimating()
         
-        if emailField.text!.isEmpty {
-            
-    
-            
-            let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .alert)
-        
-        } else if passwordField.text!.isEmpty {
-            
-            let alertController = UIAlertController(title: "Password Required", message: "Please enter your password", preferredStyle: .alert)
-        }
-        
-            // create an OK action
-            let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
-                // handle response here.
+        if emailField.text!.isEmpty || passwordField.text!.isEmpty {
+            present(alertController, animated: true) {
+                // optional code for what happens after the alert controller has finished presenting
+                self.activityIndicator.stopAnimating()
             }
-            
             // add the OK action to the alert controller
-//            alertController.addAction(OKAction)
-        
-        
-        
-        if emailField.text == "sophiakc@gmail.com" && passwordField.text == "topsecret" {
-            // Code that runs if both email and password match the text we are looking for in each case
-        } else {
-            // Code that runs if either the email or password do NOT match the text we are looking for in each case
+            alertController.addAction(OKAction)
         }
         
         
-        if emailField.text == "sophiakc@gmail.com" { }
-        
+       
         
 
     }
     
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     
     
     
