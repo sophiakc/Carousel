@@ -8,9 +8,13 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,
 
+UIScrollViewDelegate {
     
+    func scrollViewDidScroll(_ loginScrollView: UIScrollView) {
+        // This method is called as the user scrolls
+    }
     
     @IBOutlet weak var loginScrollView: UIScrollView!
     
@@ -19,33 +23,21 @@ class LoginViewController: UIViewController {
     }
     
     
-    class LoginViewController: UIViewController, UIScrollViewDelegate {
-        
-        func scrollViewDidScroll(_ loginScrollView: UIScrollView) {
-            // This method is called as the user scrolls
-        }
-        
-    }
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
         // tell the scroll view to call the view controller with the scroll view event methods
-//        loginScrollView.delegate = self
+        loginScrollView.delegate = self
+        
         
         // Set the scroll view content size
         loginScrollView.contentSize = loginScrollView.frame.size
         
         // Set the content insets
         loginScrollView.contentInset.bottom = 100
+        
+    
+    }
 
         
-    }
-    
-    
-    
 }
