@@ -125,10 +125,24 @@
                                             </textField>
                                         </subviews>
                                     </view>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="sign_in_buttons" id="DOt-2G-7M2">
-                                        <rect key="frame" x="0.0" y="350" width="320" height="104"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="6GY-8T-yBg" userLabel="buttonParentView">
+                                        <rect key="frame" x="0.0" y="337" width="320" height="129"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_buttons" id="DOt-2G-7M2">
+                                                <frame key="frameInset" minY="12" width="320" height="104"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rb5-Lb-1JM" userLabel="Sign In UIButton">
+                                                <frame key="frameInset" minX="18" minY="23" width="282" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </button>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" id="nHL-c1-1hb">
+                                                <frame key="frameInset" minX="236" minY="38" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                    </view>
                                 </subviews>
                             </scrollView>
                         </subviews>
