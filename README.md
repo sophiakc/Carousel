@@ -1,4 +1,6 @@
-# (W2 Project: *Carousel*)[http://courses.codepath.com/courses/ios_for_designers/unit/2#!assignment]
+# W2 Project: *Carousel*
+
+[Project Instructions](http://courses.codepath.com/courses/ios_for_designers/unit/2#!assignment)
 
 **Carousel** has been programmatically animated with Swift (iOS).
 

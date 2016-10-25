@@ -179,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="1167" y="438"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial View Controller-->
         <scene sceneID="FWc-bH-2KO">
             <objects>
-                <viewController id="PRI-Nt-XYf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutorialVC" id="PRI-Nt-XYf" customClass="TutorialViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pc3-1O-jj1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

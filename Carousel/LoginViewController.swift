@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController,
-
+    
 UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ loginScrollView: UIScrollView) {
@@ -18,15 +18,15 @@ UIScrollViewDelegate {
     
     
     @IBOutlet weak var loginScrollView: UIScrollView!
-
+    
     @IBOutlet weak var buttonParentView: UIView!
-        // define variables for initial position and offset
-        var buttonInitialY: CGFloat!
-        var buttonOffset: CGFloat!
+    // define variables for initial position and offset
+    var buttonInitialY: CGFloat!
+    var buttonOffset: CGFloat!
     
     @IBOutlet weak var fieldParentView: UIView!
-        var fieldInitialY: CGFloat!
-        var fieldOffset: CGFloat!
+    var fieldInitialY: CGFloat!
+    var fieldOffset: CGFloat!
     
     @IBOutlet weak var emailField: UITextField!
     
@@ -65,6 +65,8 @@ UIScrollViewDelegate {
         activityIndicator.startAnimating()
         
         if emailField.text!.isEmpty || passwordField.text!.isEmpty {
+            
+            // Delay for 2 seconds
             delay(2, closure: {
                 self.present(self.alertController, animated: true) {
                     // optional code for what happens after the alert controller has finished presenting
@@ -73,7 +75,7 @@ UIScrollViewDelegate {
                 // add the OK action to the alert controller
                 self.alertController.addAction(self.OKAction)
                 
-                })
+            })
             
         } else if emailField.text == "sophiakc@gmail.com" && passwordField.text == "topsecret" {
             
@@ -84,7 +86,14 @@ UIScrollViewDelegate {
                     
                     // optional code for what happens after the alert controller has finished presenting
                     self.activityIndicator.stopAnimating()
-                    self.performSegue(withIdentifier: "signinSegue", sender: nil)
+                    
+                    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    
+                    let tutorialVC = mainStoryboard.instantiateViewController(withIdentifier: "tutorialVC") as! TutorialViewController
+                    
+                    self.present(tutorialVC, animated: true, completion: nil)
+                    //                    self.performSegue(withIdentifier: "signinSegue", sender: nil)
+                    
                 }
             })
         } else {
@@ -98,7 +107,7 @@ UIScrollViewDelegate {
         }
         
         
-
+        
     }
     
     
@@ -107,7 +116,7 @@ UIScrollViewDelegate {
     
     
     
-
+    
     
     
     
@@ -142,9 +151,9 @@ UIScrollViewDelegate {
             
             // Move the button at the bottom when keyboard dismissed
             self.buttonParentView.frame.origin.y = self.buttonInitialY - self.buttonOffset
-
             
-    
+            
+            
         }
         
         
@@ -154,8 +163,8 @@ UIScrollViewDelegate {
         
         
         
-    
+        
     }
-
+    
     
 }
