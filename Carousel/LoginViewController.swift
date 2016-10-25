@@ -114,12 +114,6 @@ UIScrollViewDelegate {
     
     
     
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
