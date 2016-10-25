@@ -113,7 +113,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="didPressSignIn:" destination="YDd-yG-PAF" eventType="touchUpInside" id="ruP-NA-sWo"/>
-                                                    <segue destination="PRI-Nt-XYf" kind="modal" identifier="signinSegue" modalTransitionStyle="crossDissolve" id="lBO-Vo-fKF"/>
                                                 </connections>
                                             </button>
                                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" id="nHL-c1-1hb">

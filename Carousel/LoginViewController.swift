@@ -39,7 +39,7 @@ UIScrollViewDelegate {
     let alertController = UIAlertController(title: "Credentials required", message: "Please enter your email address and password.", preferredStyle: .alert)
     
     // Alert controller when sign in failed
-    let sifalertController = UIAlertController(title: "Sign In Failed", message: "Incorrect email or password.", preferredStyle: .alert)
+    let sifalertController = UIAlertController(title: "Sign In Failed", message: "Please enter a valid email and password.", preferredStyle: .alert)
     
     // create an OK action on the alertController
     let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
@@ -82,32 +82,32 @@ UIScrollViewDelegate {
             // Delay for 2 seconds
             delay(2, closure: {
                 // Code that runs if both email and password match the text we are looking for in each case
-                self.present(self.sifalertController, animated: true) {
+                
                     
-                    // optional code for what happens after the alert controller has finished presenting
-                    self.activityIndicator.stopAnimating()
+                // optional code for what happens after the alert controller has finished presenting
+                self.activityIndicator.stopAnimating()
                     
-                    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     
-                    let tutorialVC = mainStoryboard.instantiateViewController(withIdentifier: "tutorialVC") as! TutorialViewController
+                let tutorialVC = mainStoryboard.instantiateViewController(withIdentifier: "tutorialVC") as! TutorialViewController
                     
-                    self.present(tutorialVC, animated: true, completion: nil)
+                self.present(tutorialVC, animated: true, completion: nil)
                     //                    self.performSegue(withIdentifier: "signinSegue", sender: nil)
-                    
-                }
             })
+            
         } else {
             delay(2, closure: {
                 // Code that runs if either the email or password do NOT match the text we are looking for in each case
                 
+                self.present(self.sifalertController, animated: true) {
+                    // optional code for what happens after the alert controller has finished presenting
+                    self.activityIndicator.stopAnimating()
+                }
+                
                 // add the OK action to the alert controller
                 self.sifalertController.addAction(self.OKAction)
             })
-            
         }
-        
-        
-        
     }
     
     

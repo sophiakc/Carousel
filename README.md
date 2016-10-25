@@ -16,12 +16,12 @@ Total time spent: **** cumulated hours
 * [X] Landing Screen [Time spent: 1:00]
 	* [X] Static photo tiles on the initial screen
 	* [X] User can scroll to reveal sign in buttons
-* [ ] Sign In [Time spent: ]
+* [X] Sign In [Time spent: 2:30]
 	* [X] Tapping on email/password reveals the keyboard and shifts the scroll view and Sign In button up [Time spent: 2:00 get lost in translations w back animations of the keyboard]
-	* [ ] Upon tapping the Sign In button
-		* [ ] If the username or password fields are empty, user sees an error alert
-		* [ ] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert
-		* [ ] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens
+	* [X] Upon tapping the Sign In button
+		* [X] If the username or password fields are empty, user sees an error alert
+		* [X] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert [NB: after repeating the test, the alertController gets OK action on the top of each other...]
+		* [X] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Tutorial screens
 * [ ] Tutorial Screens [Time spent: ]
 	* [ ] User can page between the screens
 * [ ] Image Timeline [Time spent: ]
