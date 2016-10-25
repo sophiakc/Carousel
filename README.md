@@ -22,7 +22,7 @@ Total time spent: **** cumulated hours
 		* [X] If the username or password fields are empty, user sees an error alert
 		* [X] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert [NB: after repeating the test, the alertController gets OK action on the top of each other...]
 		* [X] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Tutorial screens
-* [ ] Tutorial Screens [Time spent: ]
+* [?] Tutorial Screens [Time spent: 2:00 and horizontal scrolling doesnt work :(]
 	* [ ] User can page between the screens
 * [ ] Image Timeline [Time spent: ]
 	* [ ] Display a scrollable view of images
