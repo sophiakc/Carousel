@@ -186,10 +186,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1300" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" id="ixv-yM-k3j">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" misplaced="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="ixv-yM-k3j">
                                 <frame key="frameInset" width="1300" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="EzJ-Te-SiS">
+                                        <rect key="frame" x="0.0" y="0.0" width="1300" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="welcome1" id="CP1-of-P6C">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -237,6 +241,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1300" height="568"/>
                     <connections>
+                        <outlet property="imageView" destination="EzJ-Te-SiS" id="ZAe-89-DPL"/>
                         <outlet property="pageControl" destination="mIv-fu-gqv" id="ffp-d6-7n8"/>
                         <outlet property="scrollView" destination="ixv-yM-k3j" id="fdZ-jO-PBZ"/>
                     </connections>

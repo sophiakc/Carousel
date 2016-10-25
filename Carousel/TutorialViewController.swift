@@ -15,13 +15,16 @@ UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var pageControl: UIPageControl!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: view.frame.size.width, height: view.frame.size.height)
+        scrollView.contentSize = imageView.frame.size
+        
         scrollView.delegate = self
         //        pageControl.numberOfPages = 4
         //        pageControl.currentPageIndicatorTintColor = UIColor.blue
@@ -30,12 +33,15 @@ UIScrollViewDelegate {
         scrollView.showsHorizontalScrollIndicator  = false
         
         
-        
 
         
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.width)
+    }
+    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // This method is called as the user scrolls
     }
 
@@ -46,14 +52,8 @@ UIScrollViewDelegate {
 //        scrollView.setContentOffset(CGPoint(xOffset,0) , animated: true)
 //    }
 //    
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-//        pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.bounds.width)
-//    }
-//    
     
     
     
     
-    
-    
-}
+
