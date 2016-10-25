@@ -9,13 +9,11 @@
 import UIKit
 
 class TutorialViewController: UIViewController,
-
+    
 UIScrollViewDelegate {
-
     
-    @IBOutlet var scrollView: UIView!
     
-//    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     
     override func viewDidLoad() {
@@ -24,13 +22,10 @@ UIScrollViewDelegate {
         
         scrollView.contentSize = CGSize(width: view.frame.size.width, height: view.frame.size.height)
         scrollView.delegate = self
+    
         
-        
-        
-        
-
         
     }
-
-
+    
+    
 }
