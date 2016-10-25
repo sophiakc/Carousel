@@ -23,16 +23,16 @@ Total time spent: **** cumulated hours
 		* [X] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert [NB: after repeating the test, the alertController gets OK action on the top of each other...]
 		* [X] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Tutorial screens
 * [?] Tutorial Screens [Time spent: 2:00 and horizontal scrolling doesnt work :(]
-	* [ ] User can page between the screens
+	* [?] User can page between the screens
 * [X] Image Timeline [Time spent: 1:00]
 	* [X] Display a scrollable view of images
 	* [X] User can tap on the conversations button to see the conversations screen (push)
 	* [X] User can tap on the profile image to see the settings view (modal from below)
-* [ ] Conversations [Time spent: ]
-	* [ ] User can dismiss the conversations screen
-* [ ] Settings [Time spent: ]
-	* [ ] User can dismiss the settings screen
-	* [ ] User can log out
+* [X] Conversations [Time spent: 0:30]
+	* [X] User can dismiss the conversations screen
+* [X] Settings [Time spent: 0:30]
+	* [X] User can dismiss the settings screen
+	* [X] User can log out
 
 ## Optional User Stories
 * [ ] Landing Screen:

@@ -1,5 +1,5 @@
 //
-//  ConversationsViewController.swift
+//  SettingsViewController.swift
 //  Carousel
 //
 //  Created by Sophia KC on 24/10/2016.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ConversationsViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
-    @IBAction func didTapBack(_ sender: AnyObject) {
-        navigationController!.popViewController(animated: true)
+    
+    @IBAction func didTapClose(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+
     }
     
     override func viewDidLoad() {
@@ -20,5 +22,5 @@ class ConversationsViewController: UIViewController {
         
     }
 
-    
+
 }
