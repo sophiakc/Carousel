@@ -1,14 +1,11 @@
 # W2 Project: *Carousel*
 
 [Project Instructions](http://courses.codepath.com/courses/ios_for_designers/unit/2#!assignment)
-
-**Carousel** has been programmatically animated with Swift (iOS).
-
-Purpose of this project: leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from the production app. Use the techniques from this week classes to implement the (Carousel app)[https://en.wikipedia.org/wiki/Dropbox_Carousel] from the signed out state to the basic signed in state.
-
 [Assets](https://www.dropbox.com/s/53llomcr20qicxo/Carousel%20Assets.zip)
 
-Submitted by: [**Sophia Kecir Camper**](http://www.sophiakc.com)
+**Carousel** has been programmatically animated with Swift (iOS) by [**Sophia Kecir Camper**](http://www.sophiakc.com).
+
+Purpose of this project: leverage views, view properties, and events to create a high fidelity prototype that is difficult to distinguish from the production app. Use the techniques from this week classes to implement the [Carousel app]([)https://en.wikipedia.org/wiki/Dropbox_Carousel) from the signed out state to the basic signed in state.
 
 Total time spent: **** cumulated hours
 
