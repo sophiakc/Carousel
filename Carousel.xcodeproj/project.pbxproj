@@ -11,6 +11,7 @@
 		7E8D2BD11DBD74C00034B8D8 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2BD01DBD74C00034B8D8 /* IntroViewController.swift */; };
 		7E8D2BD31DBD838B0034B8D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2BD21DBD838B0034B8D8 /* LoginViewController.swift */; };
 		7E8D2BD91DBEF3470034B8D8 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2BD81DBEF3470034B8D8 /* TutorialViewController.swift */; };
+		7E8D2BDB1DBF29610034B8D8 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2BDA1DBF29610034B8D8 /* ConversationsViewController.swift */; };
 		7EA5F04A1DB9A311009E940D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA5F0491DB9A311009E940D /* AppDelegate.swift */; };
 		7EA5F04C1DB9A311009E940D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA5F04B1DB9A311009E940D /* ViewController.swift */; };
 		7EA5F04F1DB9A311009E940D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA5F04D1DB9A311009E940D /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		7E8D2BD01DBD74C00034B8D8 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7E8D2BD21DBD838B0034B8D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7E8D2BD81DBEF3470034B8D8 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		7E8D2BDA1DBF29610034B8D8 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		7EA5F0461DB9A311009E940D /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA5F0491DB9A311009E940D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EA5F04B1DB9A311009E940D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				7E8D2BD01DBD74C00034B8D8 /* IntroViewController.swift */,
 				7E8D2BD21DBD838B0034B8D8 /* LoginViewController.swift */,
 				7E8D2BD81DBEF3470034B8D8 /* TutorialViewController.swift */,
+				7E8D2BDA1DBF29610034B8D8 /* ConversationsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				7EA5F04C1DB9A311009E940D /* ViewController.swift in Sources */,
 				7E8D2BCE1DBD745D0034B8D8 /* Common.swift in Sources */,
+				7E8D2BDB1DBF29610034B8D8 /* ConversationsViewController.swift in Sources */,
 				7EA5F04A1DB9A311009E940D /* AppDelegate.swift in Sources */,
 				7E8D2BD31DBD838B0034B8D8 /* LoginViewController.swift in Sources */,
 				7E8D2BD91DBEF3470034B8D8 /* TutorialViewController.swift in Sources */,

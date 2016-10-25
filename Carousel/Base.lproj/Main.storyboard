@@ -258,15 +258,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="feed" id="x3f-eo-SvG">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="scrubber" id="GSN-yu-D0a">
-                                        <rect key="frame" x="0.0" y="569" width="375" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="feed_nav" id="F5D-8a-rCY">
+                                <frame key="frameInset" minX="-1" minY="-1" width="377" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="scrubber" id="GSN-yu-D0a">
+                                <frame key="frameInset" width="375" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7CT-8Z-kco" userLabel="Button Settings">
+                                <frame key="frameInset" minX="8" minY="20" width="42" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="s8u-jt-Ia7" kind="modal" id="QMg-Zj-Gzp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9CR-4b-ooz" userLabel="Button Conversations">
+                                <frame key="frameInset" minX="324" minY="20" width="42" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Tz5-rY-iN6" kind="push" id="Ome-Bh-uKA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -275,18 +293,12 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uMd-49-K0e" userLabel="Button Settings">
                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="s8u-jt-Ia7" kind="modal" id="Ewe-6i-ugc"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="HOG-Za-HSA">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MS7-v9-Gbn" userLabel="Button Conversations">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="Tz5-rY-iN6" kind="push" id="bsJ-a7-S0K"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -297,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="3733.5" y="203.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Conversations View Controller-->
         <scene sceneID="OLa-11-Ofq">
             <objects>
-                <viewController id="Tz5-rY-iN6" sceneMemberID="viewController">
+                <viewController id="Tz5-rY-iN6" customClass="ConversationsViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFq-wD-EAn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,7 +364,7 @@
         <!--Navigation Controller-->
         <scene sceneID="h6F-Ky-iR8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cB9-sH-cXI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cB9-sH-cXI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ix0-BQ-Pep">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -373,6 +385,7 @@
         <image name="conversations" width="320" height="568"/>
         <image name="create_text" width="320" height="63"/>
         <image name="feed" width="320" height="1564"/>
+        <image name="feed_nav" width="320" height="65"/>
         <image name="intro" width="320" height="1136"/>
         <image name="intro_tile1" width="153" height="152"/>
         <image name="intro_tile2" width="76" height="75"/>
