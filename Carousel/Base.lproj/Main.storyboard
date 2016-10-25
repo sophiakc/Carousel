@@ -245,7 +245,7 @@
             </objects>
             <point key="canvasLocation" x="2175" y="154"/>
         </scene>
-        <!--View Controller-->
+        <!--CAROUSEL-->
         <scene sceneID="dAx-Vy-YLc">
             <objects>
                 <viewController id="pwF-iS-zSA" sceneMemberID="viewController">
@@ -253,18 +253,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="feed" id="x3f-eo-SvG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="PRg-xP-1tN">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="feed" id="x3f-eo-SvG">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="scrubber" id="GSN-yu-D0a">
+                                        <rect key="frame" x="0.0" y="569" width="375" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CAROUSEL" id="ZXW-4d-98Y">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="GDg-4p-5Q4">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uMd-49-K0e" userLabel="Button Settings">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="s8u-jt-Ia7" kind="modal" id="Ewe-6i-ugc"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="HOG-Za-HSA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MS7-v9-Gbn" userLabel="Button Conversations">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Tz5-rY-iN6" kind="push" id="bsJ-a7-S0K"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Now-SP-6j4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3733.5" y="203.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OLa-11-Ofq">
+            <objects>
+                <viewController id="Tz5-rY-iN6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFq-wD-EAn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="conversations" id="4aa-JG-Obi">
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZXW-4d-98Y"/>
+                    <navigationItem key="navigationItem" id="CqF-mn-cKI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Now-SP-6j4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7V-8c-zsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3733.5" y="203.5"/>
+            <point key="canvasLocation" x="4300.5" y="203.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vzT-ae-EPA">
+            <objects>
+                <viewController id="s8u-jt-Ia7" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="yAJ-c4-RWq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chc-dD-H0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3733.5" y="-591.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DPF-XM-hxw">
@@ -305,6 +370,7 @@
     </scenes>
     <resources>
         <image name="backup_button" width="320" height="97"/>
+        <image name="conversations" width="320" height="568"/>
         <image name="create_text" width="320" height="63"/>
         <image name="feed" width="320" height="1564"/>
         <image name="intro" width="320" height="1136"/>
@@ -315,6 +381,8 @@
         <image name="intro_tile5" width="76" height="75"/>
         <image name="intro_tile6" width="76" height="75"/>
         <image name="login_form" width="320" height="113"/>
+        <image name="scrubber" width="320" height="36"/>
+        <image name="settings" width="320" height="695"/>
         <image name="sign_in_buttons" width="320" height="104"/>
         <image name="sign_in_nav_bar" width="320" height="66"/>
         <image name="welcome1" width="320" height="568"/>
